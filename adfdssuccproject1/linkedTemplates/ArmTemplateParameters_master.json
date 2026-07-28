@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adfdssuccproject1"
+		},
+		"ADLSGEN2_PROJ1_accountKey": {
+			"value": ""
+		},
+		"LS_SQLServer1_password": {
+			"value": ""
+		},
+		"ADLSGEN2_PROJ1_properties_typeProperties_url": {
+			"value": "https://adlsgen2proj1.dfs.core.windows.net/"
+		},
+		"LS_SQLServer1_properties_typeProperties_server": {
+			"value": "localhost\\SQLEXPRESS"
+		},
+		"LS_SQLServer1_properties_typeProperties_database": {
+			"value": "ds_db"
+		},
+		"LS_SQLServer1_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
