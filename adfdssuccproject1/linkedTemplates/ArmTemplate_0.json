@@ -132,7 +132,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/PL_CHILD2')]",
+			"name": "[concat(parameters('factoryName'), '/PL_CHILD2_WATERMARK_UPD')]",
 			"type": "Microsoft.DataFactory/factories/pipelines",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -406,7 +406,7 @@
 									"userProperties": [],
 									"typeProperties": {
 										"pipeline": {
-											"referenceName": "PL_CHILD2",
+											"referenceName": "PL_CHILD2_WATERMARK_UPD",
 											"type": "PipelineReference"
 										},
 										"waitOnCompletion": false,
@@ -453,7 +453,7 @@
 			"dependsOn": [
 				"[concat(variables('factoryId'), '/datasets/SqlServerTable2')]",
 				"[concat(variables('factoryId'), '/datasets/DS_SqlTable_Parquet1')]",
-				"[concat(variables('factoryId'), '/pipelines/PL_CHILD2')]"
+				"[concat(variables('factoryId'), '/pipelines/PL_CHILD2_WATERMARK_UPD')]"
 			]
 		},
 		{
